@@ -1,0 +1,72 @@
+@import 'root1';
+
+@charset "UTF-8";
+
+@import 'root.css';
+
+section{
+  padding: 10px 20px;
+}
+
+section h2 {
+  font-family: ‘Roboto Slab’, sans-serif;
+  font-size: 1.3em;
+  font-style: bold;
+  text-align: left;
+}
+
+#prereqs p {
+  font-size: 1.3em;
+  color: var(--seccolor);
+}
+
+#prereqs li {
+  font-size: 1.3em;
+  color: var(--primcolor);
+}
+
+#coursedates{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#coursedates article {
+  width: 48%;
+  padding: 10px;
+}
+
+table td:nth-child(1){
+  width: 70%;
+  text-align: left;
+}
+
+table td:nth-child(2){
+  width: 15%;
+  text-align: right;
+}
+
+table td:nth-child(3){
+  width: 15%;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  #coursedates{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  #coursedates article {
+    width: 95%;
+    padding: auto 0;
+  }
+} 
+
+
+
+ 
+
+
+

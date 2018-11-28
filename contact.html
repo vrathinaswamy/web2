@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BCIT: comp 1950</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Questrial|Roboto+Slab" rel="stylesheet">
+<link rel="stylesheet" href="styles/contact1.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="scripts/comp1950.js"></script>
+</head>
+
+<body>
+
+<header>
+	<div class="header-content-wrap container">
+		<h1><a href="#0">comp 1950</a></h1>
+		<button class="btn-menu">Menu</button>
+		<nav>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./outline.html">Outline</a></li>
+				<li><a href="./schedule.html">Schedule</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>	
+	</div>
+</header>
+<div class="wrapper container">
+	<main>
+        <section>
+        <h2>contact instructor</h2>    
+        <form id="contactform" method="post">
+            <article>
+                <div class="cardouter">
+                    <div class="labelgroup">
+                            <label class="labelVal">Thanks for your interest, Mr. Michael Whyte will contact you shortly...</label>                            
+                    </div>
+                    <div>
+                            <input type="submit" id="resetcontactform" class="button" value="reset">    
+                    </div>
+                </div>
+            </article>
+            <article>
+                    <div class="cardouter">
+                            <div class="labelgroup">
+                                <label class="labelkey">first name</label>
+                                <input type="text" name="firstname" value="" required>
+                            </div>
+                            <div class="labelgroup">
+                                    <label class="labelkey">last name</label>
+                                    <input type="text" name="lastname" value="" required>
+                            </div>
+                            <div class="labelgroup">
+                                    <label class="labelkey">email</label>
+                                    <input type="email" name="email" value="" required>
+                            </div>
+                            <div class="labelgroup">
+                                    <label class="labelkey">bcit student number</label>
+                                    <input type="text" name="studnumber" value="" pattern="A[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" title="please use format A99999999" required>
+                            </div>
+                            <div class="labelgroup">
+                                    <label class="labelkey">question</label>
+                                    <textarea name="question" value="" required></textarea>
+                            </div>
+                            <div class="labelgroup">
+                                    <label class="labelkey">student type</label>
+                                    <ul>
+                                            <li>
+                                                    <input type="radio" name="studtype" value="prospective student" required>
+                                                    <label  class="labelval">prospective student</label>                          
+                                            </li>
+                                            <li>
+                                                    <input type="radio" name="studtype" value="current student" required>
+                                                    <label  class="labelval">current student</label>                          
+                                            </li>
+                                    </ul>
+                            </div>
+                        </div>
+            </article>
+            <article>
+                    <input type="submit" id="submitcontact" class="button" value="contact">    
+            </article>
+        </form>
+        </section>
+	</main>
+	<footer>
+		<div class="row">
+			<div class="one-third column">
+				<h2><a href="#0">find us</a></h2>
+				<p>British Columbia Institute of Technology</p>
+				<p>3700 Willingdon Avenue</p>
+				<p>Burnaby, British Columbia</p>
+				<p>Canada, V5G 3H2</p>
+			</div>
+			<div class="one-third column">
+				<h2 class="credits">info for</h2>
+				<p><a href="https://www.bcit.ca/admission/experience/">prospective students</a></p>
+				<p><a href="https://www.bcit.ca/pts/">part-time students</a></p>
+				<p><a href="https://www.bcit.ca/international/">international students</a></p>
+				<p><a href="https://www.bcit.ca/currentstudents/">current students</a></p>
+			</div>
+			<div class="one-third column">
+				<h2 class="contact">connect</h2>
+				<p><a href="https://www.bcit.ca/infosessions/">attend an info session</a></p>
+				<p><a href="https://www.bcit.ca/advising/">connect with an advisor</a></p>
+			</div>
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>
